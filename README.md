@@ -2,7 +2,8 @@
 Ruby on Rails blog
 
 ## TODO
-
+ - make ownership of an article more explicit and secure
+ - restrict articles being edited only by their original owner
  - Add a site-wide sidebar that holds navigation links
  - improve styling
  - Create date-based navigation links. For instance, there would be a list of links with the names of the months and when you click on the month it shows you all the articles published in that month.
