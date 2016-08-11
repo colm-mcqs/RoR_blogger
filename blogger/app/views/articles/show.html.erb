@@ -13,11 +13,11 @@
 <p><%= @article.body %></p>
 <br />
 <% if logged_in? and @article.author and @article.author.id == current_user.id%>
-  <div>
-  <%= link_to "edit", edit_article_path(@article) %><br />
 
-  <%= link_to "delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
-  </div>
+  <%= link_to "edit", edit_article_path(@article), class: 'article_actions' %><br />
+
+  <%= link_to "delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"}, class: 'article_actions' %>
+
 <% end %>
 <br />
 <%= render partial: 'comments/form' %>
