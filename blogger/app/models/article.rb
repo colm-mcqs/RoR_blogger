@@ -2,6 +2,7 @@ class Article < ApplicationRecord
   has_many :comments
   has_many :taggings
   has_many :tags, through: :taggings
+  belongs_to :author
   has_attached_file :image
   validates_attachment_content_type :image,  :content_type => [/png\Z/, /jpe?g\Z/]
   def tag_list
